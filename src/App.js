@@ -10,7 +10,7 @@ class App extends React.Component {
 
     this.state = {
       showChild: true,
-      text: ''
+      text: '',
     };
   }
 
@@ -22,7 +22,7 @@ class App extends React.Component {
           <button
             onClick={() =>
               this.setState(state => ({
-                showChild: !state.showChild
+                showChild: !state.showChild,
               }))
             }
           >
@@ -31,7 +31,7 @@ class App extends React.Component {
           <button
             onClick={() =>
               this.setState(state => ({
-                text: state.text + '_hello'
+                text: state.text + '_hello',
               }))
             }
           >
